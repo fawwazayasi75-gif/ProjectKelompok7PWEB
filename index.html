@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beranda - Magang Jobs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="app-container">
+        
+        <header class="top-header">
+            <div class="logo">
+                magangCilacap <div class="logo-sub">by kelompok 7</div>
+            </div>
+            <div class="header-actions">
+                <div class="menu-icon">☰</div>
+            </div>
+        </header>
+
+        
+        <div class="top-blue-bg" style="position: relative; z-index: 100;">
+            <div class="search-section">
+                <div class="search-box">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" value="magang • Cilacap Jawa Tengah" readonly>
+                </div>
+                <button class="heart-icon-btn" onclick="window.location.href='favorit.html'">♡</button>
+            </div>
+            
+            <div class="filter-section" id="filter-container">
+                
+                <button class="filter-btn" onclick="togglePopup('popup-gaji', event)">Gaji ⌄</button>
+                <button class="filter-btn" onclick="togglePopup('popup-jenis', event)">Jenis ⌄</button>
+                <button class="filter-btn" onclick="togglePopup('popup-tempat', event)">Tempat kerja ⌄</button>
+            </div>
+
+           
+            
+            <div id="popup-gaji" class="filter-popup" style="display: none;">
+                <div class="popup-tabs">
+                    <div class="tab">Tahunan</div>
+                    <div class="tab active-tab">Bulanan</div>
+                    <div class="tab">Per Jam</div>
+                </div>
+                <div class="popup-inputs">
+                    <div class="input-group">
+                        <label>Min • IDR</label>
+                        <select>
+                            <option>Rp 0</option>
+                            <option>Rp 1 jt</option>
+                            <option>Rp 3 jt</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Maks • IDR</label>
+                        <select>
+                            <option>Rp 100 jt+</option>
+                            <option>Rp 10 jt</option>
+                            <option>Rp 5 jt</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="popup-jenis" class="filter-popup" style="display: none;">
+                <label class="checkbox-label"><input type="checkbox"> Penuh waktu</label>
+                <label class="checkbox-label"><input type="checkbox"> Paruh waktu</label>
+                <label class="checkbox-label"><input type="checkbox"> Kontrak/Temporer</label>
+                <label class="checkbox-label"><input type="checkbox"> Kasual/Liburan</label>
+            </div>
+
+            
+            <div id="popup-tempat" class="filter-popup" style="display: none;">
+                <label class="checkbox-label"><input type="checkbox"> Kantor</label>
+                <label class="checkbox-label"><input type="checkbox"> Hibrid</label>
+                <label class="checkbox-label"><input type="checkbox"> Jarak jauh</label>
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <div class="results-info">
+                <div class="badge-baru">Baru <div class="count">0</div></div>
+                <div class="sort-icon">⇅</div>
+            </div>
+            
+            <h2 class="job-count">44 pekerjaan</h2>
+
+           
+            <div class="job-card" onclick="window.location.href='detail.html'">
+                <img src="https://via.placeholder.com/60" alt="Logo Perusahaan" class="company-logo">
+                <h3 class="job-title">Staff Marketing Pendidikan</h3>
+                <p class="company-name">PT Edu Inovasi Indonesia</p>
+                <p class="job-location">Jawa Tengah</p>
+                <p class="job-snippet">PT. EDU INOVASI INDONESIA [EDUBRAND], kantor pusat di Kota Semarang, membutuhkan Staf Marketing Jasa Pendidikan Full Time</p>
+                <div class="job-footer">
+                    <div class="time-posted">17 hari yang lalu • Sudah mulai melamar</div>
+                    <button class="bookmark-btn" onclick="tambahFavorit(event)">🔖</button>
+                </div>
+            </div>
+            
+            
+            <div class="job-card" onclick="window.location.href='detail.html'">
+                <img src="https://via.placeholder.com/60" alt="Logo Perusahaan" class="company-logo">
+                <h3 class="job-title">Purchasing Chemical Staff</h3>
+                <p class="company-name">DUNIATEX</p>
+                <p class="job-location">Jawa Tengah</p>
+                <p class="job-snippet">Dibutuhkan segera staf purchasing chemical untuk penempatan di wilayah Jawa Tengah.</p>
+                <div class="job-footer">
+                    <div class="time-posted">Baru</div>
+                    <button class="bookmark-btn" onclick="tambahFavorit(event)">🔖</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item active"><div class="nav-icon">🏠</div>Beranda</a>
+            <a href="favorit.html" class="nav-item"><div class="nav-icon">❤️</div>Favorit</a>
+            <a href="tentang.html" class="nav-item"><div class="nav-icon">ℹ️</div>Tentang</a>
+            <a href="profil.html" class="nav-item"><div class="nav-icon">👤</div>Profil</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
