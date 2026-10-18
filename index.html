@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app-container">
-        <!-- HEADER -->
+        
         <header class="top-header">
             <div class="logo">
                 magangCilacap <div class="logo-sub">by kelompok 7</div>
@@ -18,8 +18,7 @@
             </div>
         </header>
 
-        <!-- BAGIAN BIRU ATAS (Pencarian & Filter) -->
-        <!-- BAGIAN BIRU ATAS (Pencarian & Filter) -->
+        
         <div class="top-blue-bg" style="position: relative; z-index: 100;">
             <div class="search-section">
                 <div class="search-box">
@@ -30,15 +29,14 @@
             </div>
             
             <div class="filter-section" id="filter-container">
-                <!-- Tombol Filter -->
+                
                 <button class="filter-btn" onclick="togglePopup('popup-gaji', event)">Gaji ⌄</button>
                 <button class="filter-btn" onclick="togglePopup('popup-jenis', event)">Jenis ⌄</button>
                 <button class="filter-btn" onclick="togglePopup('popup-tempat', event)">Tempat kerja ⌄</button>
             </div>
 
-            <!-- POP-UP DIKELUARKAN DARI SINI AGAR TIDAK TERSEMBUNYI -->
+           
             
-            <!-- POP-UP GAJI -->
             <div id="popup-gaji" class="filter-popup" style="display: none;">
                 <div class="popup-tabs">
                     <div class="tab">Tahunan</div>
@@ -65,7 +63,7 @@
                 </div>
             </div>
 
-            <!-- POP-UP JENIS -->
+            
             <div id="popup-jenis" class="filter-popup" style="display: none;">
                 <label class="checkbox-label"><input type="checkbox"> Penuh waktu</label>
                 <label class="checkbox-label"><input type="checkbox"> Paruh waktu</label>
@@ -73,7 +71,7 @@
                 <label class="checkbox-label"><input type="checkbox"> Kasual/Liburan</label>
             </div>
 
-            <!-- POP-UP TEMPAT KERJA -->
+            
             <div id="popup-tempat" class="filter-popup" style="display: none;">
                 <label class="checkbox-label"><input type="checkbox"> Kantor</label>
                 <label class="checkbox-label"><input type="checkbox"> Hibrid</label>
@@ -81,7 +79,7 @@
             </div>
         </div>
 
-        <!-- KONTEN BERANDA -->
+        
         <div class="content">
             <div class="results-info">
                 <div class="badge-baru">Baru <div class="count">0</div></div>
@@ -90,7 +88,7 @@
             
             <h2 class="job-count">44 pekerjaan</h2>
 
-            <!-- KARTU PEKERJAAN 1 -->
+           
             <div class="job-card" onclick="window.location.href='detail.html'">
                 <img src="https://via.placeholder.com/60" alt="Logo Perusahaan" class="company-logo">
                 <h3 class="job-title">Staff Marketing Pendidikan</h3>
@@ -103,7 +101,7 @@
                 </div>
             </div>
             
-            <!-- KARTU PEKERJAAN 2 -->
+            
             <div class="job-card" onclick="window.location.href='detail.html'">
                 <img src="https://via.placeholder.com/60" alt="Logo Perusahaan" class="company-logo">
                 <h3 class="job-title">Purchasing Chemical Staff</h3>
@@ -117,7 +115,7 @@
             </div>
         </div>
 
-        <!-- BOTTOM NAVIGATION -->
+        
         <nav class="bottom-nav">
             <a href="index.html" class="nav-item active"><div class="nav-icon">🏠</div>Beranda</a>
             <a href="favorit.html" class="nav-item"><div class="nav-icon">❤️</div>Favorit</a>
