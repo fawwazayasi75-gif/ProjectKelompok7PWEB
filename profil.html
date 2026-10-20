@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Magang Cilacap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app-container">
+    <header class="top-header">
+        <div class="logo">Magang Cilacap <span class="logo-sub">Profil</span></div>
+    </header>
+
+    <main class="content profile-page">
+        <div class="profile-header-new">
+            <div class="avatar-square" id="avatarIcon">F</div>
+            <div class="username-container">
+                <span class="username-text" id="userDisplayName">Kelompok 7</span>
+            </div>
+        </div>
+
+        <ul class="profile-menu">
+            <li>
+                <div class="menu-item-content">
+                    <span class="icon">🌙</span>
+                    <span>Mode Gelap</span>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                    <span class="slider"></span>
+                </label>
+            </li>
+
+            <li onclick="editProfil()">
+                <div class="menu-item-content">
+                    <span class="icon">✏️</span>
+                    <span>Edit Nama Profil</span>
+                </div>
+                <span class="arrow-right">›</span>
+            </li>
+
+            <li onclick="prosesLogout()" class="logout-item">
+                <div class="menu-item-content">
+                    <span class="icon">🚪</span>
+                    <span style="color: #e63946; font-weight: bold;">Keluar dari Akun</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <b class="nav-icon">🏠</b>
+            <p>Beranda</p>
+        </a>
+        <a href="favorit.html" class="nav-item">
+            <b class="nav-icon">❤️</b>
+            <p>Favorit</p>
+        </a>
+        <a href="profil.html" class="nav-item active">
+            <b class="nav-icon">👤</b>
+            <p>Profil</p>
+        </a>
+        <a href="tentang.html" class="nav-item">
+            <b class="nav-icon">ℹ️</b>
+            <p>Tentang</p>
+        </a>
+    </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
